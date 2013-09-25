@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" {% block app_cache %}{% endblock %}>
+<head>
+    <meta charset="utf-8" />
+    <title>Medicians</title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, 
+            user-scalable=no">
+
+    <!-- iOS Specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Medicians">
+
+    <!-- iOS icon and startup -->
+    <link rel="apple-touch-icon" href="/images/icon-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icon_72-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icon_76-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icon_114-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icon_144-precomposed.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icon_152-precomposed.png" />
+
+    <!-- Android icon -->
+    <link rel="apple-touch-icon-precomposed" href="/images/icon_144.png" />
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+    {% block css %}{% endblock %}
+</head>
+<body {% block body_data %}{% endblock %}>
+    {% block body %}{% endblock %}
+
+    {% block app_script %}{% endblock %}
+    {% block footer_script %}{% endblock %}
+</body>
+</html>

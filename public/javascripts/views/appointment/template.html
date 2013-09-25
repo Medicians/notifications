@@ -1,0 +1,45 @@
+<span class="app-title">Turno{% if create %}<br/><span id="user_title"></span>{% endif %}</span>
+
+<div class="app-card ui-corner-all ui-shadow">
+  <div class="app-card-container">
+    <!--<p>
+      <span class="roboto">Encontrá tu </span><span class="roboto" style="color: orange;">Colectivo (Beta)</span>
+    </p>
+    <p class="roboto">
+      <small>Dejá vacio el campo que desees que sea obtenido desde el GPS de tu dispositivo.</small>
+    </p>-->
+    <p>
+        <small>Persona</small>
+        <input type="hidden" name="text-basic" id="uid" class="uid">
+        <input type="hidden" name="text-basic" id="user_name" class="user_name">
+        <input type="text" name="text-basic" id="search_person" class="search_person" placeholder="Juan Pérez" value="" >
+        <ul id="users_results"></ul>
+    </p>
+    <p>
+        <small>Fecha</small>
+        <input type="date" name="text-basic" id="date" placeholder="Fecha" value="" >
+    </p>
+    <p>
+        <small>Hora de inicio</small>
+      <input type="time" name="text-basic" id="startTime" placeholder="Hora de inicio" value="" >
+    </p>
+    <p>
+        <small>Hora de fin</small>
+      <input type="time" name="text-basic" id="endTime" placeholder="Hora de find" value="" >
+    </p>
+
+    {% if isAdmin %}
+    <input type="hidden" id="admin_id" />
+    {% else %}
+    <p>
+        <small>Médico</small>
+        <select id="admin_id">
+        </select>
+    </p>
+    {% endif %}
+
+  </div>
+  <fieldset class="ui-grid-solo">
+    <div class="ui-block-a"><a href="javascript:;" id="save_appointment" data-role="none" class="app-button">Guardar</a></div>
+  </fieldset>
+</div>

@@ -1,0 +1,20 @@
+<span class="app-title">Editar configuración</span>
+
+<div class="app-card ui-corner-all ui-shadow">
+  <div class="app-card-container">
+    <p class="roboto">
+      <small>Modifique desde aquí sus preferencias</small>
+    </p>
+    <p>
+        <small>Email (Dirección que aparecerá en los emails enviados)</small>
+        <input type="email" id="email" placeholder="usuario@dominio.com" value="{{ email }}" >
+    </p>
+    <p>
+        <small>Nombre o Texto que aparecerá en las firmas </small>
+        <textarea id="title">{{ title }}</textarea>
+    </p>
+  </div>
+  <fieldset class="ui-grid-solo">
+    <div class="ui-block-a"><a href="javascript:;" data-role="none" class="save_config app-button">Guardar</a></div>
+  </fieldset>
+</div>

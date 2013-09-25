@@ -1,0 +1,191 @@
+@import "jquery.mobile.css";
+@import "roboto.less";
+@import "fullcalendar.less";
+@import "jquery.impromptu.less";
+@import "backbone.modal.less";
+@import "backbone.modal.theme.less";
+
+@main-highlight-color: #0093EA;
+
+#calendar .fc-border-separate {
+	border-spacing: 0;
+}
+
+#calendar .fc-header {
+	border: 0;
+}
+
+#calendar .fc-event-time {
+	font-weight: bold;
+}
+
+#calendar .fc-event-time:after {
+	content: " ";
+}
+
+#calendar .fc-state-highlight {
+	background: #ecf0f1;
+}
+
+.block {
+	display: block;
+}
+
+#panel {
+	background: #34495E;
+	box-sizing: border-box;
+}
+
+.app-title {
+	margin: 0;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 30px;
+	text-decoration: none;
+	color: #666666;
+	font-family: 'roboto';
+	font-size: 20px;
+}
+
+.app-card {
+	background-color: white; 
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+}
+
+.app-card-container {
+	padding-left: 16px; 
+	padding-right: 16px; 
+	padding-bottom: 16px; 
+	padding-top: 8px;
+	box-sizing: border-box;
+}
+
+.app-button {
+	margin: 0;
+	box-sizing: border-box;	
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	color: #666666;
+	font-family: 'roboto';
+	-webkit-user-select: none;
+    user-select: none;
+}
+
+.app-button:hover {
+	background: @main-highlight-color;
+	color: white;
+	-webkit-user-select: none;
+    user-select: none;
+}
+
+#e5e_news_content {
+	font-family: 'roboto';
+	font-size: .8em;
+	display:inline-block;
+	vertical-align: middle;
+	margin: 2px;
+}
+
+#copyright {
+	float: left;
+    bottom: 10px;
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-family: 'roboto';
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.ui-panel-inner {
+	box-sizing: border-box;
+}
+
+.ui-li-divider {
+	font-family: 'roboto';
+	font-weight: bolder;
+	background: transparent;
+	color: white;
+}
+
+.ui-btn-text a {
+	font-family: 'roboto';	
+}
+
+#users_data {
+	padding: 0;
+}
+
+#users_results {
+	list-style: none;
+	display: block;
+	padding: 0;
+}
+
+#users_results li {
+	display: block;
+	padding: 4px;
+	cursor: default;
+}
+
+@media( min-width: 700px ) {
+	#app-container {
+		width: 70%;
+		margin:0 auto 0 auto;
+	}
+}
+
+@media (min-width:35em) {
+/* wrap on wide viewports once open */
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-left,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-left,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-left,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-left {
+	    margin-right: 17em;
+	}
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-right,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-right,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-right,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-right {
+    	margin-left: 17em;
+	}
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal {
+	    width: auto;
+	}
+
+	/* disable "dismiss" on wide viewports */
+	.ui-responsive-panel .ui-panel-dismiss-display-push {
+    	display: none;
+	}
+}
+
+@media print {
+	#panel {
+		display: none;
+	}
+
+	#app-container {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.print {
+		display: block;
+	}
+}

@@ -1,0 +1,14 @@
+<div class="app-card ui-corner-all ui-shadow">
+  <div class="app-card-container">
+  	<p>
+  		{{ user_name }}
+  	</p>
+    <p>
+       <small>{{ date }} {{ start_time }} - {{ end_time }}</small></br> 
+    </p>
+  </div>
+  <fieldset class="ui-grid-a">
+    <div class="ui-block-a"><a href="#appointment={{ _id }}" data-role="none" class="edit_appointment app-button">Editar</a></div>
+    <div class="ui-block-b"><a href="javascript:;" data-app-id="{{ _id }}" data-role="none" class="delete_appointment app-button">Eliminar</a></div>
+  </fieldset>
+</div>
