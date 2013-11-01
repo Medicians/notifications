@@ -1,3 +1,18 @@
+[1.1.0](https://github.com/paularmstrong/swig/tree/v1.1.0) / 2013-10-02
+-------------------------------------------------------------------------------
+
+* **Added** Allow logic in default parsing. gh-326
+* **Fixed** Error when attempting to wrap spaceless tag around macro/function output. gh-336
+* **Fixed** Don't overwrite keys on the locals object. gh-337
+
+[1.0.0](https://github.com/paularmstrong/swig/tree/v1.0.0) / 2013-09-23
+-------------------------------------------------------------------------------
+
+* **Fixed** Allow parent and other tags to work correctly nested in other tags. gh-331
+* **Fixed** Prevent lexer from matching partial logic/words in variables. gh-330
+
+Migrating from v0.x.x? View the [Migration Guide](https://github.com/paularmstrong/swig/wiki/Migrating-from-v0.x.x-to-v1.0.0)
+
 [1.0.0-rc3](https://github.com/paularmstrong/swig/tree/v1.0.0-rc3) / 2013-09-14
 -------------------------------------------------------------------------------
 

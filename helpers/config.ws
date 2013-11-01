@@ -13,8 +13,19 @@
 ######################################################
 
 ## Actual config starts below ##
+# status: ok
+# kind: free
+# pw: cYj+jSNoDrNInRPRKb7wElZt4CI=
+# price: US$0.99
+# price_expiration: 1383807703
+# currency: USD
+# cost: 0.99
+# expiration: 1412358571
+# login: 5493513313792
+# type: new
+#
 
 cc=54
-phone=93516276390
-id=35214805265967001
-password=
+phone=5493513313792
+id=353699040173140
+password=cYj+jSNoDrNInRPRKb7wElZt4CI=
